@@ -1,0 +1,141 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 7 10
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:Battery_Cell BT1
+U 1 1 6080542D
+P 2750 2700
+F 0 "BT1" H 2868 2796 50  0000 L CNN
+F 1 "Battery_Cell" H 2868 2705 50  0000 L CNN
+F 2 "" V 2750 2760 50  0001 C CNN
+F 3 "~" V 2750 2760 50  0001 C CNN
+	1    2750 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Battery_Cell BT3
+U 1 1 608063F9
+P 3050 2700
+F 0 "BT3" H 3168 2796 50  0000 L CNN
+F 1 "Battery_Cell" H 3168 2705 50  0000 L CNN
+F 2 "" V 3050 2760 50  0001 C CNN
+F 3 "~" V 3050 2760 50  0001 C CNN
+	1    3050 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Battery_Cell BT2
+U 1 1 60806ECD
+P 2750 3100
+F 0 "BT2" H 2868 3196 50  0000 L CNN
+F 1 "Battery_Cell" H 2868 3105 50  0000 L CNN
+F 2 "" V 2750 3160 50  0001 C CNN
+F 3 "~" V 2750 3160 50  0001 C CNN
+	1    2750 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Battery_Cell BT4
+U 1 1 60806ED3
+P 3050 3100
+F 0 "BT4" H 3168 3196 50  0000 L CNN
+F 1 "Battery_Cell" H 3168 3105 50  0000 L CNN
+F 2 "" V 3050 3160 50  0001 C CNN
+F 3 "~" V 3050 3160 50  0001 C CNN
+	1    3050 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 2900 2750 2800
+Wire Wire Line
+	2750 2500 2750 2350
+Wire Wire Line
+	2750 2350 2900 2350
+Wire Wire Line
+	3050 2350 3050 2500
+Wire Wire Line
+	3050 2900 3050 2800
+Wire Wire Line
+	2750 3200 2750 3400
+Wire Wire Line
+	2750 3400 2900 3400
+Wire Wire Line
+	3050 3400 3050 3200
+Wire Wire Line
+	2900 2350 2900 2250
+Connection ~ 2900 2350
+Wire Wire Line
+	2900 2350 3050 2350
+$Comp
+L power:+BATT #PWR027
+U 1 1 60807E66
+P 2900 2100
+F 0 "#PWR027" H 2900 1950 50  0001 C CNN
+F 1 "+BATT" H 2915 2273 50  0000 C CNN
+F 2 "" H 2900 2100 50  0001 C CNN
+F 3 "" H 2900 2100 50  0001 C CNN
+	1    2900 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 3400 2900 3650
+Connection ~ 2900 3400
+Wire Wire Line
+	2900 3400 3050 3400
+$Comp
+L power:GND #PWR028
+U 1 1 608087E1
+P 2900 3650
+F 0 "#PWR028" H 2900 3400 50  0001 C CNN
+F 1 "GND" H 2905 3477 50  0000 C CNN
+F 2 "" H 2900 3650 50  0001 C CNN
+F 3 "" H 2900 3650 50  0001 C CNN
+	1    2900 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 6080BEF8
+P 2600 2200
+F 0 "#FLG0101" H 2600 2275 50  0001 C CNN
+F 1 "PWR_FLAG" H 2600 2373 50  0000 C CNN
+F 2 "" H 2600 2200 50  0001 C CNN
+F 3 "~" H 2600 2200 50  0001 C CNN
+	1    2600 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 2200 2600 2250
+Wire Wire Line
+	2600 2250 2900 2250
+Connection ~ 2900 2250
+Wire Wire Line
+	2900 2250 2900 2100
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 6080CA72
+P 2450 3350
+F 0 "#FLG0102" H 2450 3425 50  0001 C CNN
+F 1 "PWR_FLAG" H 2450 3523 50  0000 C CNN
+F 2 "" H 2450 3350 50  0001 C CNN
+F 3 "~" H 2450 3350 50  0001 C CNN
+	1    2450 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 3350 2450 3400
+Wire Wire Line
+	2450 3400 2750 3400
+$EndSCHEMATC
