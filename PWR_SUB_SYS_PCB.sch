@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 10
+Sheet 1 15
 Title ""
 Date ""
 Rev ""
@@ -36,5 +36,11 @@ S 4900 1450 650  650
 U 608CA2DC
 F0 "4V" 50
 F1 "file608CA2DB.sch" 50
+$EndSheet
+$Sheet
+S 6400 1450 1100 800 
+U 60925CA4
+F0 "12V" 50
+F1 "file60925CA3.sch" 50
 $EndSheet
 $EndSCHEMATC

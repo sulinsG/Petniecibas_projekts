@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 10
+Sheet 7 15
 Title ""
 Date ""
 Rev ""
@@ -19,7 +19,7 @@ U 1 1 6080542D
 P 2750 2700
 F 0 "BT1" H 2868 2796 50  0000 L CNN
 F 1 "Battery_Cell" H 2868 2705 50  0000 L CNN
-F 2 "" V 2750 2760 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" V 2750 2760 50  0001 C CNN
 F 3 "~" V 2750 2760 50  0001 C CNN
 	1    2750 2700
 	1    0    0    -1  
@@ -30,7 +30,7 @@ U 1 1 608063F9
 P 3050 2700
 F 0 "BT3" H 3168 2796 50  0000 L CNN
 F 1 "Battery_Cell" H 3168 2705 50  0000 L CNN
-F 2 "" V 3050 2760 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" V 3050 2760 50  0001 C CNN
 F 3 "~" V 3050 2760 50  0001 C CNN
 	1    3050 2700
 	1    0    0    -1  
@@ -41,7 +41,7 @@ U 1 1 60806ECD
 P 2750 3100
 F 0 "BT2" H 2868 3196 50  0000 L CNN
 F 1 "Battery_Cell" H 2868 3105 50  0000 L CNN
-F 2 "" V 2750 3160 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" V 2750 3160 50  0001 C CNN
 F 3 "~" V 2750 3160 50  0001 C CNN
 	1    2750 3100
 	1    0    0    -1  
@@ -52,7 +52,7 @@ U 1 1 60806ED3
 P 3050 3100
 F 0 "BT4" H 3168 3196 50  0000 L CNN
 F 1 "Battery_Cell" H 3168 3105 50  0000 L CNN
-F 2 "" V 3050 3160 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" V 3050 3160 50  0001 C CNN
 F 3 "~" V 3050 3160 50  0001 C CNN
 	1    3050 3100
 	1    0    0    -1  
