@@ -406,52 +406,52 @@ Text Label 10150 2250 0    50   ~ 0
 Wire Wire Line
 	9950 2150 10150 2150
 NoConn ~ 10150 2150
-$Comp
-L Connector:Conn_01x06_Female J1
-U 1 1 608A75AE
-P 2650 5550
-F 0 "J1" H 2678 5526 50  0000 L CNN
-F 1 "Conn_01x06_Female" H 2678 5435 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 2650 5550 50  0001 C CNN
-F 3 "~" H 2650 5550 50  0001 C CNN
-	1    2650 5550
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR029
-U 1 1 608A8BC9
-P 2150 6000
-F 0 "#PWR029" H 2150 5750 50  0001 C CNN
-F 1 "GND" H 2155 5827 50  0000 C CNN
-F 2 "" H 2150 6000 50  0001 C CNN
-F 3 "" H 2150 6000 50  0001 C CNN
-	1    2150 6000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2150 6000 2150 5850
-Wire Wire Line
-	2150 5850 2450 5850
-Wire Wire Line
-	2150 5850 2150 5650
-Wire Wire Line
-	2150 5650 2450 5650
-Connection ~ 2150 5850
-Wire Wire Line
-	2150 5650 2150 5450
-Wire Wire Line
-	2150 5450 2450 5450
-Connection ~ 2150 5650
-Text GLabel 1650 5750 0    50   Output ~ 0
-LOAD_1
-Text GLabel 1650 5550 0    50   Output ~ 0
-LOAD_2
-Text GLabel 1650 5350 0    50   Output ~ 0
+Text GLabel 2400 4150 0    50   Output ~ 0
 LOAD_3
 Wire Wire Line
-	1650 5350 2450 5350
+	2400 4150 2900 4150
 Wire Wire Line
-	2450 5550 1650 5550
+	2900 4250 2600 4250
 Wire Wire Line
-	1650 5750 2450 5750
+	2900 4450 2600 4450
+$Comp
+L power:GND #PWR066
+U 1 1 608EA451
+P 2600 4950
+F 0 "#PWR066" H 2600 4700 50  0001 C CNN
+F 1 "GND" H 2605 4777 50  0000 C CNN
+F 2 "" H 2600 4950 50  0001 C CNN
+F 3 "" H 2600 4950 50  0001 C CNN
+	1    2600 4950
+	1    0    0    -1  
+$EndComp
+Text GLabel 2400 4350 0    50   Output ~ 0
+LOAD_2
+Text GLabel 2400 4550 0    50   Output ~ 0
+LOAD_1
+Wire Wire Line
+	2400 4550 2900 4550
+$Comp
+L Connector:Conn_01x06_Female J1
+U 1 1 6091EFB8
+P 3100 4350
+F 0 "J1" H 3128 4326 50  0000 L CNN
+F 1 "Conn_01x06_Female" H 3128 4235 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 3100 4350 50  0001 C CNN
+F 3 "~" H 3100 4350 50  0001 C CNN
+	1    3100 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 4350 2900 4350
+Wire Wire Line
+	2600 4250 2600 4450
+Wire Wire Line
+	2900 4650 2600 4650
+Wire Wire Line
+	2600 4650 2600 4950
+Wire Wire Line
+	2600 4650 2600 4450
+Connection ~ 2600 4650
+Connection ~ 2600 4450
 $EndSCHEMATC
