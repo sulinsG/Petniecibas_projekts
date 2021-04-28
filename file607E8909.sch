@@ -222,14 +222,10 @@ Wire Wire Line
 	3750 1800 3950 1800
 Wire Wire Line
 	3750 1900 3950 1900
-Wire Wire Line
-	3750 2000 3950 2000
 Text Label 3950 1800 0    50   ~ 0
 A1
 Text Label 3950 1900 0    50   ~ 0
 A2
-Text Label 3950 2000 0    50   ~ 0
-A3
 Text Label 7800 2700 0    50   ~ 0
 A0
 Wire Wire Line
@@ -238,14 +234,10 @@ Wire Wire Line
 	7600 2800 7800 2800
 Wire Wire Line
 	7600 2900 7800 2900
-Wire Wire Line
-	7600 3000 7800 3000
 Text Label 7800 2800 0    50   ~ 0
 A1
 Text Label 7800 2900 0    50   ~ 0
 A2
-Text Label 7800 3000 0    50   ~ 0
-A3
 NoConn ~ 7800 3100
 NoConn ~ 7800 3200
 NoConn ~ 7800 3300
@@ -454,4 +446,8 @@ Wire Wire Line
 	2600 4650 2600 4450
 Connection ~ 2600 4650
 Connection ~ 2600 4450
+NoConn ~ 3750 2000
+NoConn ~ 7800 3000
+Wire Wire Line
+	7600 3000 7800 3000
 $EndSCHEMATC
