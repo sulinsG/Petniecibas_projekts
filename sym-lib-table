@@ -1,3 +1,0 @@
-(sym_lib_table
-  (lib (name EIPP_LIBRARY)(type Legacy)(uri ${KIPRJMOD}/symbols_footprints/EIPP_LIBRARY.lib)(options "")(descr ""))
-)
