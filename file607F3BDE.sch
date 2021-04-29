@@ -1,0 +1,89 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Regulator_Linear:LM7805_TO220 U3
+U 1 1 607F3E81
+P 5350 3000
+F 0 "U3" H 5350 3242 50  0000 C CNN
+F 1 "LM7805_TO220" H 5350 3151 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 5350 3225 50  0001 C CIN
+F 3 "https://www.onsemi.cn/PowerSolutions/document/MC7800-D.PDF" H 5350 2950 50  0001 C CNN
+	1    5350 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 3000 5050 3000
+Wire Wire Line
+	5650 3000 5750 3000
+Wire Wire Line
+	5350 3300 5350 3350
+$Comp
+L power:GND #PWR07
+U 1 1 607F4C50
+P 5350 3500
+F 0 "#PWR07" H 5350 3250 50  0001 C CNN
+F 1 "GND" H 5355 3327 50  0000 C CNN
+F 2 "" H 5350 3500 50  0001 C CNN
+F 3 "" H 5350 3500 50  0001 C CNN
+	1    5350 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR08
+U 1 1 607F4FA8
+P 6000 3000
+F 0 "#PWR08" H 6000 2850 50  0001 C CNN
+F 1 "+5V" H 6015 3173 50  0000 C CNN
+F 2 "" H 6000 3000 50  0001 C CNN
+F 3 "" H 6000 3000 50  0001 C CNN
+	1    6000 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+BATT #PWR06
+U 1 1 607F55A5
+P 4800 3000
+F 0 "#PWR06" H 4800 2850 50  0001 C CNN
+F 1 "+BATT" H 4815 3173 50  0000 C CNN
+F 2 "" H 4800 3000 50  0001 C CNN
+F 3 "" H 4800 3000 50  0001 C CNN
+	1    4800 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C7
+U 1 1 607F640E
+P 5750 3200
+F 0 "C7" H 5842 3246 50  0000 L CNN
+F 1 "10 uF" H 5842 3155 50  0000 L CNN
+F 2 "" H 5750 3200 50  0001 C CNN
+F 3 "~" H 5750 3200 50  0001 C CNN
+	1    5750 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 3000 5750 3100
+Connection ~ 5750 3000
+Wire Wire Line
+	5750 3000 6000 3000
+Wire Wire Line
+	5750 3300 5750 3350
+Wire Wire Line
+	5350 3350 5750 3350
+Connection ~ 5350 3350
+Wire Wire Line
+	5350 3350 5350 3500
+$EndSCHEMATC
