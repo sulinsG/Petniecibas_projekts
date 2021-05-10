@@ -27,12 +27,6 @@ U 6094117B
 F0 "LM2731YMF" 50
 F1 "file6094117A.sch" 50
 $EndSheet
-$Sheet
-S 4650 2350 750  600 
-U 60835FC2
-F0 "TPS61175PWP" 50
-F1 "file60835FC1.sch" 50
-$EndSheet
 $Comp
 L EIPP_LIBRARY:OS103012MU1QP1 S10
 U 1 1 608F37F6
@@ -50,8 +44,6 @@ F 7 "8 Aug 17" H 4750 4300 50  0001 L BNN "PARTREV"
 $EndComp
 Text GLabel 4200 4000 0    50   Output ~ 0
 12V
-Text GLabel 2900 4400 0    50   Output ~ 0
-12V_TPS
 Text GLabel 2850 4300 0    50   Output ~ 0
 12V_LM27
 Text GLabel 2900 4200 0    50   Output ~ 0
@@ -194,4 +186,12 @@ Connection ~ 3500 4300
 Wire Wire Line
 	3200 4200 4350 4200
 Connection ~ 3200 4200
+$Sheet
+S 4650 2350 750  600 
+U 608B1208
+F0 "L7981A" 50
+F1 "file608B1207.sch" 50
+$EndSheet
+Text GLabel 2900 4400 0    50   Output ~ 0
+12V_L7891A
 $EndSCHEMATC
