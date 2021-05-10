@@ -81,34 +81,16 @@ F 3 "~" H 4300 3150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R49
-U 1 1 609BC90D
-P 4750 3150
-F 0 "R49" H 4809 3196 50  0000 L CNN
-F 1 "4k7" H 4809 3105 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 4750 3150 50  0001 C CNN
-F 3 "~" H 4750 3150 50  0001 C CNN
-	1    4750 3150
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR068
 U 1 1 609BDCC1
-P 4750 3900
-F 0 "#PWR068" H 4750 3650 50  0001 C CNN
-F 1 "GND" H 4755 3727 50  0000 C CNN
-F 2 "" H 4750 3900 50  0001 C CNN
-F 3 "" H 4750 3900 50  0001 C CNN
-	1    4750 3900
+P 4450 3450
+F 0 "#PWR068" H 4450 3200 50  0001 C CNN
+F 1 "GND" H 4455 3277 50  0000 C CNN
+F 2 "" H 4450 3450 50  0001 C CNN
+F 3 "" H 4450 3450 50  0001 C CNN
+	1    4450 3450
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4300 3650 4750 3650
-Wire Wire Line
-	5050 3650 4750 3650
-Connection ~ 4750 3650
-Wire Wire Line
-	4750 3900 4750 3650
 Wire Wire Line
 	6450 3950 6450 4000
 $Comp
@@ -414,41 +396,22 @@ Text Label 3900 3000 2    50   ~ 0
 VIN_L798
 Wire Wire Line
 	5600 3300 5050 3300
-Wire Wire Line
-	5050 3300 5050 3650
 $Comp
 L Device:C_Small C51
 U 1 1 609BD29F
-P 5050 3150
-F 0 "C51" H 5142 3196 50  0000 L CNN
-F 1 "1uF" H 5142 3105 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 5050 3150 50  0001 C CNN
-F 3 "~" H 5050 3150 50  0001 C CNN
-	1    5050 3150
+P 4600 3150
+F 0 "C51" H 4692 3196 50  0000 L CNN
+F 1 "1uF" H 4692 3105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 4600 3150 50  0001 C CNN
+F 3 "~" H 4600 3150 50  0001 C CNN
+	1    4600 3150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	3900 3000 4300 3000
 Wire Wire Line
-	5050 3050 5050 3000
-Connection ~ 5050 3000
-Wire Wire Line
-	5050 3000 5200 3000
-Wire Wire Line
-	4750 3050 4750 3000
-Connection ~ 4750 3000
-Wire Wire Line
 	4300 3050 4300 3000
 Connection ~ 4300 3000
-Wire Wire Line
-	4300 3000 4750 3000
-Wire Wire Line
-	4300 3250 4300 3650
-Wire Wire Line
-	4750 3250 4750 3650
-Wire Wire Line
-	5050 3250 5050 3300
-Connection ~ 5050 3300
 NoConn ~ 5550 3600
 NoConn ~ 5550 3750
 Wire Wire Line
@@ -466,8 +429,6 @@ Wire Wire Line
 Connection ~ 9050 3100
 Wire Wire Line
 	5600 3100 5500 3100
-Wire Wire Line
-	4750 3000 5050 3000
 $Comp
 L EIPP_LIBRARY:L7981A-Regulator_Switching U12
 U 1 1 609BBB42
@@ -497,4 +458,35 @@ Wire Wire Line
 Connection ~ 5200 3000
 Wire Wire Line
 	5200 3000 5600 3000
+Wire Wire Line
+	4300 3000 4600 3000
+Wire Wire Line
+	4600 3000 4600 3050
+Connection ~ 4600 3000
+Wire Wire Line
+	4600 3000 5200 3000
+Wire Wire Line
+	4300 3250 4300 3400
+Wire Wire Line
+	4300 3400 4450 3400
+Wire Wire Line
+	4600 3400 4600 3250
+Wire Wire Line
+	4450 3450 4450 3400
+Connection ~ 4450 3400
+Wire Wire Line
+	4450 3400 4600 3400
+$Comp
+L power:GND #PWR?
+U 1 1 60A360C3
+P 5050 3400
+F 0 "#PWR?" H 5050 3150 50  0001 C CNN
+F 1 "GND" H 5055 3227 50  0000 C CNN
+F 2 "" H 5050 3400 50  0001 C CNN
+F 3 "" H 5050 3400 50  0001 C CNN
+	1    5050 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 3400 5050 3300
 $EndSCHEMATC
